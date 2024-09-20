@@ -42,7 +42,7 @@ class _PolicyComponentState extends State<PolicyComponent> {
         Container(
           padding: const EdgeInsets.only(left: 2),
           child: Text("$index. ${section.title}",
-              style: Theme.of(context).textTheme.headline5!.copyWith(
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                   fontSize:
                       getVariableForLevel(levels, [22.0, 20.0, 18.0, 16.0]))),
         ),
@@ -115,7 +115,7 @@ class _PolicyComponentState extends State<PolicyComponent> {
               return Center(
                   child: Text('Failed to load page',
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.headline5));
+                      style: Theme.of(context).textTheme.headlineSmall));
             } else {
               final List<PolicyPageSectionModel> sections =
                   PolicyPageSectionModel.listFromJson(
